@@ -1,0 +1,94 @@
+@font-face {
+  font-family: artifakt;
+  src: url(../../fonts/Artifakt-Element-Regular.otf); }
+@font-face {
+  font-family: artifakt-bold;
+  src: url(../../fonts/Artifakt-Element-Bold.otf); }
+body {
+  font-family: artifakt;
+  background-color: #fbf9f7; }
+
+.container-fluid {
+  padding: 0; }
+
+.main-header {
+  text-align: center;
+  background-color: #5e485b;
+  color: #e6c8cb;
+  border-bottom: 2px solid #947190; }
+  .main-header .main-header-text1 {
+    font-family: artifakt-bold;
+    font-size: 30px;
+    padding-top: 10px; }
+  .main-header .main-header-text2 {
+    height: 20px; }
+
+.main-header:hover {
+  color: #e600e6;
+  cursor: pointer; }
+
+.thread-box {
+  margin: 15px;
+  height: 70px;
+  display: flex; }
+  .thread-box .thread-box-rank {
+    color: #7b7b7b;
+    width: 40px;
+    text-align: center;
+    font-family: artifakt-bold;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .thread-box .thread-box-rank i {
+      cursor: pointer;
+      font-size: 40px;
+      line-height: 20px; }
+    .thread-box .thread-box-rank div {
+      line-height: 20px; }
+  .thread-box .thread-box-icon {
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .thread-box .thread-box-icon div {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      background-color: #ee9dea; }
+  .thread-box .thread-box-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column; }
+    .thread-box .thread-box-body .thread-box-body-link {
+      flex: 4;
+      font-size: 22px; }
+    .thread-box .thread-box-body .thread-box-body-info {
+      flex: 1;
+      font-size: 12px;
+      color: #7b7b7b; }
+      .thread-box .thread-box-body .thread-box-body-info span {
+        cursor: pointer; }
+    .thread-box .thread-box-body .thread-box-body-share {
+      flex: 1;
+      font-family: artifakt-bold;
+      font-size: 12px;
+      color: #7b7b7b; }
+
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: none; }
+
+.thread-form {
+  height: 0px;
+  overflow-y: hidden; }
+  .thread-form .input-text {
+    margin: 5px;
+    border-radius: 2px;
+    border: 1px solid #947190;
+    background-color: #eee9f9;
+    color: #5e485b;
+    height: 35px;
+    width: 300px;
+    padding: 5px; }
+
+/*# sourceMappingURL=main.css.map */

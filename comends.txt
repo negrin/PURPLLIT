@@ -1,0 +1,2 @@
+scss:
+scss --watch scripts/scss:scripts/css

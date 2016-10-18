@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="jQuery/ui-lightness/jquery-ui-1.10.4.css" rel="stylesheet" />
+    <script src="jQuery/jQuery.js"></script>
+    <script src="jQuery/jquery-ui-1.10.4.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link href="css/font-awesome.min.css" rel="stylesheet" >
+
+    <link href="scripts/css/main.css" rel="stylesheet" />
+    <script src="scripts/global.js"></script>
+
+</head>
+
+<body class="container-fluid" onload="renderThreads()">
+
+<div class="main-header" onclick="menuDropDown()">
+    <div class="main-header-text1" >PURPLLIT</div>
+    <div class="main-header-text2" id="mainHeader"></div>
+</div>
+
+
+
+
+<div class="new-thread">
+    <div>
+        <input type="button" value="+ New" class="btn" onclick="formDropDown('threadForm')">
+        <input type="button" value="user" class="btn" onclick="formDropDown('userForm')">
+    </div>
+    <div class="thread-form" id="userForm">
+        <div><input class="input-text" type="text" oninput="changeInputColor(this)" placeholder="User Name" id="userName"></div>
+        <div><input class="input-text" type="text" oninput="changeInputColor(this)" placeholder="Color" id="UserColor"></div>
+        <div><input type="submit" value="Save" class="btn" onclick="changeUserInfo()"></div>
+    </div>
+    <div class="thread-form" id="threadForm">
+        <div><input class="input-text" type="text" oninput="changeInputColor(this)" placeholder="Title.." id="newThreadTitle"></div>
+        <div><input class="input-text" type="text" oninput="changeInputColor(this)" placeholder="Link.." id="newThreadLink"></div>
+        <div><input type="submit" value="ok" class="btn" onclick="addNewThread()"></div>
+    </div>
+</div>
+
+<div class="thread-container" id="threadContainer">
+</div>
+
+
+</body>
+</html>
